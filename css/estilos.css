@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lobster', cursive;
+font-family: 'OPEN SANS', sans-serif;
+  background: black;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: rgb(0,0,0);
+	color:orange;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+}
+
+.contenedor{
+	width: 98%;
+	margin:auto;
+}
+
+h1{
+float:left;
+}
+
+header .contenedor{
+	display:table;
+}
+section{
+	width:100%;
+	margin-bottom:25px;
+    color: orange;
+}
+
+#bienvenidos{
+	text-align:center;	
+    background: BLACK;
+}
+
+#bienvenidos h2{
+    color:orange;
+}
+#bienvenidos p{
+    color: orange;
+}
+
+footer{
+    background: black;
+    color: orange;
+}
+footer .contenedor{
+	display:flex;
+	flex-wrap:wrap;	
+justify-content: center;
+	padding-bottom:25px;
+}
+
+
+
+.copy{
+	font-size:20px;
+	color:orange;
+}
+
+.sociales{
+    
+    color:orange;
+	width:100%;
+	text-align:center;
+	font-size:28px;	
+}
+
+
+
+
+
+
+.sociales a{
+	color:orange;
+	text-decoration:none;
+}
+
+@media (min-width:768px){
+	.sociales{
+		width:auto;
+	}
+	
+	footer .contenedor{
+		justify-content: space-between;
+    
+	}
+   
+}
+
+
+@media (min-width:1024px){
+	.contenedor{
+		width:1000px;
+	}
+ 
+	
+}
+

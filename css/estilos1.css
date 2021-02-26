@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&display=swap');
+
+
+.slider {
+	width:100%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display: flex;
+	padding:0;
+	width: 500%;
+	
+	animation: cambio 25s infinite alternate;
+
+}
+
+
+
+@keyframes cambio {
+	
+	0% {margin-left:0;	}
+	18% {margin-left:0;	}
+	
+	22% {margin-left:-100%;	}
+	40% {margin-left:-100%;	}
+	
+	44% {margin-left:-200%;	}
+	62% {margin-left:-200%;	}
+
+	66% {margin-left:-300%;	}
+	84% {margin-left:-300%;	}
+
+	88% {margin-left:-400%;	}
+	100%{margin-left:-400%;	}
+}
+
+
+.slider li{
+	list-style:none;
+	width:100%;
+	
+}
+
+.slider img{
+	width: 100%;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+	font-family: 'Arial', cursive;
+font-family: 'Open Sans', sans-serif;
+background-color: black;
+ color:orange;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	background: black;
+	color:orange;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+}
+
+.contenedor1{
+	width: 98%;
+	margin:auto;
+}
+
+h1{
+float:left;
+}
+
+h5{
+    text-align: center;
+    color: orange;
+}
+
+header .contenedor1{
+	display:table;
+    background-color: black;
+    
+}
+section{
+	width:100%;
+	margin-bottom:25px;
+}
+
+#bienvenidos{
+	text-align:center;	
+}
+
+footer .contenedor1{
+	display:flex;
+	flex-wrap:wrap;	
+justify-content: center;
+	padding-bottom:25px;	
+}
+
+footer{
+	background-color: black;
+	color: orange;
+}
+
+
+.copy{
+	font-size:20px;
+		color: orange;
+}
+
+.sociales{
+	width:100%;
+	text-align:center;
+	font-size:28px;	
+	color: orange
+}
+
+.sociales a{
+	color: white;
+	text-decoration:none;
+    color: orange;
+}
+
+
+@media (min-width:768px){
+	.sociales{
+		width:auto;
+	}
+
+    header .contenedor{
+        font-size-adjust: auto;
+    }
+    
+    footer .contenedor1{
+		justify-content: space-between;
+	}
+    
+   
+}
+
+
+@media (min-width:1024px){
+	.contenedor1 {
+		width:1000px;
+	}	
+}
+
